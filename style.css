@@ -1,0 +1,64 @@
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+#keys{
+    /* keys is an id we set that contains all of the buttons */
+    display: grid;
+    /* makes a row of the buttons */
+    grid-template-columns: repeat(4, 1fr);
+    /* creates the rows into coloumns the 4 means make 4 coloumns and 1fr is 1 fractional unit basically the spacing */
+    gap: 10px;
+    padding: 25px;
+}
+button{
+    /* no dot or anything refers to all buttons in the program */
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(39, 100%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+body{
+    /* body is the entire body */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* vh is 100percent */
+    background-color: hsl(0, 0%, 75%);
+}
+button:hover{
+    /* when the button is hovered */
+    background-color: hsl(39, 100%, 35%);
+}
+button:active{
+    /* active is when it is clicked */
+    background-color: hsl(39, 100%, 40%);
+}
+.op{
+    background-color: hsl(39, 79%, 58%);
+}
+.op:hover{
+    background-color: hsl(39, 79%, 65%);
+}
+.op:active{
+    background-color: hsl(39, 79%, 70%);
+}
